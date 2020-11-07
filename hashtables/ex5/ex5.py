@@ -7,6 +7,19 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+    result = set()
+
+    for query in queries:
+
+
+        for f in files:
+
+            if query in f:
+
+                result.add(query)
+
+
+    result = list(result)
 
     return result
 

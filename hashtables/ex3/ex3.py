@@ -3,6 +3,37 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    first = arrays[:1]
+    last = arrays[1:]
+
+    # create dict of values in last array into 
+
+    for i in range(len(last)):
+        # print(last[i])
+
+        last[i] = {v:0 for k,v in enumerate(last[i])}
+
+    # join list with values as keys and add 
+
+    # loop over val in first array
+
+    # check each dict to see if value exist
+    result = []
+
+    for val in first:
+
+        time_found = 0
+
+        for term in last:
+
+            if val in term:
+                
+                time_found += 1
+        
+
+        if time_found >= len(last) - 1:
+
+            result.append(val)
 
     return result
 
